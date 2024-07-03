@@ -24,6 +24,8 @@ namespace Employers_Application
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            var connection = Configuration.GetConnectionString("DbConnection");
+            services.AddDbcontext<>
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
